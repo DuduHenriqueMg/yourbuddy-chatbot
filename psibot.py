@@ -109,7 +109,7 @@ def call_openai_api(client, messages):
 def main():
     """Função principal"""
     # Título
-    st.title("🧠 PsiBot - Assistente de Psicologia")
+    st.title("🧠 YourBuddy - Assistente de Psicologia")
     st.markdown("*Um assistente virtual para apoio psicológico básico*")
     
     # Inicializar estado
