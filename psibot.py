@@ -70,13 +70,21 @@ def render_sidebar():
         # Verificar API key
         api_key = get_api_key()
         
-        if api_key:
-            st.success("✅ API Key configurada")
-            masked_key = f"sk-...{api_key[-4:]}" if len(api_key) > 4 else "sk-****"
-            st.text(f"Chave: {masked_key}")
-        else:
-            st.error("❌ API Key não encontrada")
-            st.info("Configure OPENAI_API_KEY nos secrets")
+        st.markdown("## 📋 Recursos de Apoio")
+    
+        st.markdown("""
+        ### 🆘 Emergências
+        - **CVV**: 188 (24h gratuito)
+        - **SAMU**: 192
+        - **Polícia**: 190
+        
+        ### 💡 Dicas de Bem-estar
+        - Pratique respiração profunda
+        - Mantenha uma rotina de sono
+        - Exercite-se regularmente
+        - Mantenha contato social
+        - Pratique gratidão diariamente
+        """)
         
         # Botão para limpar conversa
         if st.button("🗑️ Limpar Conversa"):
