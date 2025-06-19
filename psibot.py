@@ -4,7 +4,7 @@ import os
 
 # Configuração da página
 st.set_page_config(
-    page_title="PsiBot - Assistente de Psicologia",
+    page_title="YourBuddy - Assistente de Psicologia",
     page_icon="🧠",
     layout="wide"
 )
@@ -24,7 +24,7 @@ def init_session_state():
         st.session_state.messages = [
             {
                 "role": "assistant", 
-                "content": "Olá! Eu sou o PsiBot, seu assistente de apoio psicológico. Estou aqui para te ouvir e oferecer algumas técnicas que podem te ajudar. Como você está se sentindo hoje? 😊"
+                "content": "Olá! Eu sou o YourBuddy, seu assistente de apoio psicológico. Estou aqui para te ouvir e oferecer algumas técnicas que podem te ajudar. Como você está se sentindo hoje? 😊"
             }
         ]
 
